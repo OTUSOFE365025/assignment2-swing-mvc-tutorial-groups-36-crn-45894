@@ -132,5 +132,4 @@ public class View {
 	 public void setBye(JButton bye) {
 	  this.bye = bye;
 	 }
-	 
 }

@@ -1,4 +1,3 @@
-
 public class MySwingMVCApp {
 
 	public static void main(String[] args) {
@@ -13,5 +12,4 @@ public class MySwingMVCApp {
 		  
 		  c.initController();
 	}
-
 }

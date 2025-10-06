@@ -1,14 +1,10 @@
-// This window emulates the scanning of an item. Every time the buttom is pressed
+// This window emulates the scanning of an item. Every time the button is pressed
 // it will send a notification of a UPC code
-
 import java.awt.BorderLayout;
- 
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-
 import javax.swing.JPanel;
-
 
 public class Scanner {
 	// Scanner uses Swing framework to create a UPC code

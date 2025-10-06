@@ -1,4 +1,3 @@
-
 public class Model {
 	 private String firstname;
 	 private String lastname;
