@@ -48,7 +48,7 @@ public class FileScanner {
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(200, 100);
-        frame.setLocation(300, 50);
+        frame.setLocation(1000, 1000);
         frame.setVisible(true);
 
         // Create UI elements
@@ -72,7 +72,7 @@ public class FileScanner {
             System.out.println("Random upc number: " + upcNumber);
             return upcNumber;
         } else {
-            System.out.println("The list of products is empty.");
+            System.err.println("The list of products is empty.");
             return -1;
         }
     }

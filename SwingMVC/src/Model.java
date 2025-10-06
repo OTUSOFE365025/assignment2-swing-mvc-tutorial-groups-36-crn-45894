@@ -69,14 +69,18 @@ public class Model {
                 scannedProductList.add(product);
             }
             else{
-                System.err.println("Product with UPC " + upc + " does not exist");
+                System.err.println("Product with UPC " + upc + " does not exist in file");
                 break;
             }
         }
     }
 
     public double getSubtotal() {
-        return 0;
+        double subtotal = 0;
+        for (Product product : scannedProductList) {
+            subtotal += product.getPrice();
+        }
+        return subtotal;
     }
 
     //For testing

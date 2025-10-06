@@ -1,11 +1,6 @@
 import java.awt.BorderLayout;
 
-import javax.swing.GroupLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 
 public class View {
     // View uses Swing framework to display UI to user
@@ -18,6 +13,10 @@ public class View {
     private JButton lastnameSaveButton;
     private JButton hello;
     private JButton bye;
+
+    private JFrame subtotalFrame;
+    private JTextArea subtotalTextArea;
+    private JScrollPane subtotalScroll;
 
     public View(String title) {
         frame = new JFrame(title);
@@ -59,6 +58,24 @@ public class View {
         layout.linkSize(SwingConstants.HORIZONTAL, firstnameSaveButton, lastnameSaveButton);
         layout.linkSize(SwingConstants.HORIZONTAL, hello, bye);
         frame.getContentPane().setLayout(layout);
+
+
+        //New subtotal display
+        subtotalFrame = new JFrame("Subtotal");
+        subtotalFrame.getContentPane().setLayout(new BorderLayout());
+        subtotalFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        subtotalFrame.setSize(400, 500);
+        subtotalFrame.setLocation(300, 50);
+        subtotalFrame.setVisible(true);
+
+
+        subtotalTextArea = new JTextArea();
+        subtotalTextArea.setEditable(false);
+        subtotalScroll = new JScrollPane(subtotalTextArea);
+
+        subtotalFrame.add(subtotalScroll);
+        subtotalTextArea.append("Subtotal: ");
+        subtotalTextArea.setCaretPosition(subtotalTextArea.getDocument().getLength());
     }
 
     public JFrame getFrame() {
