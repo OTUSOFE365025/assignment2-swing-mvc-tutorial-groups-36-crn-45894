@@ -8,7 +8,7 @@ public class MySwingMVCApp {
 		  Controller c = new Controller(m, v);
 		  
 		  // create scanner
-		  Scanner scanner = new Scanner();
+		  FileScanner Filescanner = new FileScanner();
 		  
 		  c.initController();
 	}
