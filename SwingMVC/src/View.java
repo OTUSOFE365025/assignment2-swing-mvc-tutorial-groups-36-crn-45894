@@ -78,7 +78,7 @@ public class View {
         subtotalPanel = new JPanel();
         subtotalPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
         subtotalLabel = new JLabel("Subtotal :");
-        subtotalTextField = new JTextField(34);
+        subtotalTextField = new JTextField(30);
         subtotalPanel.add(subtotalLabel);
         subtotalPanel.add(subtotalTextField);
         subtotalTextField.setEditable(false);
