@@ -48,7 +48,7 @@ public class FileScanner {
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(200, 100);
-        frame.setLocation(1000, 1000);
+        frame.setLocation(50, 50);
         frame.setVisible(true);
 
         // Create UI elements

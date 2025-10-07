@@ -66,16 +66,16 @@ public class View {
         subtotalFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         subtotalFrame.setSize(400, 500);
         subtotalFrame.setLocation(300, 50);
-        subtotalFrame.setVisible(true);
-
 
         subtotalTextArea = new JTextArea();
         subtotalTextArea.setEditable(false);
         subtotalScroll = new JScrollPane(subtotalTextArea);
 
         subtotalFrame.add(subtotalScroll);
-        subtotalTextArea.append("Subtotal: ");
+        subtotalTextArea.append("hello");
         subtotalTextArea.setCaretPosition(subtotalTextArea.getDocument().getLength());
+        subtotalFrame.setVisible(true);
+        subtotalTextArea.append("Yea");
     }
 
     public JFrame getFrame() {
