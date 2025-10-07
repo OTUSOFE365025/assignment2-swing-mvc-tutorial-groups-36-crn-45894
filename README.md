@@ -3,9 +3,9 @@
 ## Group Members And Responsibilities 
 | Name           | ID        | Responsibility   |
 |----------------|-----------|------------------|
-| Blake Heselden | 100916163 |                  |
+| Blake Heselden | 100916163 | Q1               |
 | Steven Sun     | 100816207 | Code Development |
-| Evan Tome      | 100912667 | Q2               |
+| Evan Tome      | 100912667 | Q2, Q4           |
 
 ## Q1
 
