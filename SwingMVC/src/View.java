@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+import java.awt.*;
 
 import javax.swing.*;
 
@@ -14,9 +14,13 @@ public class View {
     private JButton hello;
     private JButton bye;
 
-    private JFrame subtotalFrame;
-    private JTextArea subtotalTextArea;
-    private JScrollPane subtotalScroll;
+    private JFrame productsFrame;
+    private JTextArea productsTextArea;
+    private JScrollPane productsScroll;
+
+    private JPanel subtotalPanel;
+    private JLabel subtotalLabel;
+    private JTextField subtotalTextField;
 
     public View(String title) {
         frame = new JFrame(title);
@@ -59,23 +63,37 @@ public class View {
         layout.linkSize(SwingConstants.HORIZONTAL, hello, bye);
         frame.getContentPane().setLayout(layout);
 
+        //New products and subtotal display
+        productsFrame = new JFrame("Products");
+        productsFrame.getContentPane().setLayout(new BorderLayout());
+        productsFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        productsFrame.setSize(400, 500);
+        productsFrame.setLocation(300, 50);
 
-        //New subtotal display
-        subtotalFrame = new JFrame("Subtotal");
-        subtotalFrame.getContentPane().setLayout(new BorderLayout());
-        subtotalFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        subtotalFrame.setSize(400, 500);
-        subtotalFrame.setLocation(300, 50);
+        productsTextArea = new JTextArea();
+        productsTextArea.setEditable(false);
+        productsScroll = new JScrollPane(productsTextArea);
 
-        subtotalTextArea = new JTextArea();
-        subtotalTextArea.setEditable(false);
-        subtotalScroll = new JScrollPane(subtotalTextArea);
+        //Creating the display for subtotal
+        subtotalPanel = new JPanel();
+        subtotalPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        subtotalLabel = new JLabel("Subtotal :");
+        subtotalTextField = new JTextField(34);
+        subtotalPanel.add(subtotalLabel);
+        subtotalPanel.add(subtotalTextField);
+        subtotalTextField.setEditable(false);
 
-        subtotalFrame.add(subtotalScroll);
-        subtotalTextArea.append("hello");
-        subtotalTextArea.setCaretPosition(subtotalTextArea.getDocument().getLength());
-        subtotalFrame.setVisible(true);
-        subtotalTextArea.append("Yea");
+        productsFrame.add(productsScroll, BorderLayout.CENTER);
+        productsFrame.add(subtotalPanel, BorderLayout.SOUTH);
+        productsTextArea.setCaretPosition(productsTextArea.getDocument().getLength());
+        productsFrame.setVisible(true);
+    }
+    public JTextArea getProductTextArea() {
+        return productsTextArea;
+    }
+
+    public JTextField getSubtotalTextField() {
+        return subtotalTextField;
     }
 
     public JFrame getFrame() {

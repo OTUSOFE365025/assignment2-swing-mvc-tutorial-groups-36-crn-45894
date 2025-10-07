@@ -22,6 +22,22 @@ public class Controller {
         view.getBye().addActionListener(e -> sayBye());
     }
 
+    public void addScannedItem(int upcCode){
+        if(upcCode!=-1) {
+            model.addByUPC(upcCode);
+            updateSubtotalView();
+        }else{
+            JOptionPane.showMessageDialog(null, "Empty file or no data", "ERROR",
+                    JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    public void updateSubtotalView(){
+        Product latestProduct = model.getLastProduct();
+        view.getProductTextArea().append(latestProduct + "\n");
+        view.getSubtotalTextField().setText("$" + String.format("%.2f", model.getSubtotal()));
+    }
+
     private void saveFirstname() {
         model.setFirstname(view.getFirstnameTextfield().getText());
         JOptionPane.showMessageDialog(null, "Firstname saved : " + model.getFirstname(), "Info", JOptionPane.INFORMATION_MESSAGE);

@@ -16,9 +16,13 @@ public class FileScanner {
     private JFrame frame;
     private JPanel scannerPanel;
     private JButton scanButton;
+    private final Controller c;
     private static final ArrayList<Integer> upcs = new ArrayList<>();
 
-    public FileScanner() {
+    public FileScanner(Controller c) {
+
+        this.c = c;
+
         //Creating File for reading
         File productFile = new File("SwingMVC/products_file");
         try (Scanner productFileScanner = new Scanner(productFile)) {
@@ -59,7 +63,7 @@ public class FileScanner {
         scannerPanel.add(scanButton);
         frame.getContentPane().add(scannerPanel);
 
-        scanButton.addActionListener(e -> generateUPC());
+        scanButton.addActionListener(e -> this.c.addScannedItem(generateUPC()));
     }
 
     private int generateUPC() {

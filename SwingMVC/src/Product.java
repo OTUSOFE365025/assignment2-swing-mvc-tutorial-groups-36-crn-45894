@@ -32,4 +32,9 @@ public class Product {
     public void setUPC(int uPC) {
         UPC = uPC;
     }
+
+    @Override
+    public String toString(){
+        return "Product [Name= " + name + ", Price= $" + price + ", UPC= " + UPC + "]";
+    }
 }
