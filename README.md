@@ -8,12 +8,10 @@
 | Evan Tome      | 100912667 | Q2, Q4           |
 
 ## Q1
+Swing is a Java library used to build desktop graphical user interfaces that run smoothly on an operating system. At its core, Swing provides a comprehensive suite of UI controls, buttons, text boxes, tables, menus, panels among many other things that developers can assemble into interactive windows. Since all of its components are written entirely in Java, programs made with Swing look and function the same no matter where they run. What makes Swing especially appealing is how customizable developers can easily adjust the layout, colors, and behavior of components to match the style of their application. Overall, developers often choose Swing when they want a reliable, flexible way to design desktop applications that work consistently and look great across different platforms.
 
 ### Class Diagram of Swing
 <img width="676" height="812" alt="image" src="https://github.com/user-attachments/assets/1bd98f0a-0cd0-4326-90d8-6cabfaac67b3" />
-
-Swing is a Java library used to build desktop graphical user interfaces that run smoothly on an operating system. At its core, Swing provides a comprehensive suite of UI controls, buttons, text boxes, tables, menus, panels among many other things that developers can assemble into interactive windows. Since all of its components are written entirely in Java, programs made with Swing look and function the same no matter where they run. What makes Swing especially appealing is how customizable developers can easily adjust the layout, colors, and behavior of components to match the style of their application. Overall, developers often choose Swing when they want a reliable, flexible way to design desktop applications that work consistently and look great across different platforms.
-
 ## Q2
 The example code implements the MVC pattern by separating the program into a Model, View, and Controller component. The 
 model stores the first and last name data and provides setter and getter methods to separate the data from the user 
