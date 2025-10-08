@@ -24,5 +24,7 @@ It differs from the conventional MVC pattern described in the lectures because t
 controller when its data changes. Instead, the controller directly retrieves data from the model and updates the view. 
 In the traditional MVC pattern, the view observes the model and updates automatically when data changes.
 
+##Q4
+
 ### Sequence Diagram
 
