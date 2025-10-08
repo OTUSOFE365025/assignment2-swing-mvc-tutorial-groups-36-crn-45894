@@ -27,4 +27,5 @@ In the traditional MVC pattern, the view observes the model and updates automati
 ## Q4
 
 ### Sequence Diagram
+<img width="1160" height="715" alt="image" src="https://github.com/user-attachments/assets/7a6b1632-05b8-4b66-ae19-97a27ce88cbc" />
 
