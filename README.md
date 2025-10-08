@@ -12,6 +12,7 @@ Swing is a Java library used to build desktop graphical user interfaces that run
 
 ### Class Diagram of Swing
 <img width="676" height="812" alt="image" src="https://github.com/user-attachments/assets/1bd98f0a-0cd0-4326-90d8-6cabfaac67b3" />
+
 ## Q2
 The example code implements the MVC pattern by separating the program into a Model, View, and Controller component. The 
 model stores the first and last name data and provides setter and getter methods to separate the data from the user 
