@@ -1,14 +1,20 @@
 # Assignment 2 (MVC) Group 36
 
 ## Group Members And Responsibilities 
-| Name           | ID        | Responsibility   |
-|----------------|-----------|------------------|
-| Blake Heselden | 100916163 | Q1               |
-| Steven Sun     | 100816207 | Code Development |
-| Evan Tome      | 100912667 | Q2, Q4           |
+| Name           | ID        | Responsibility   | Email                           |
+|----------------|-----------|------------------|---------------------------------|
+| Blake Heselden | 100916163 | Q1               | blake.heselden@ontariotechu.net |
+| Steven Sun     | 100816207 | Code Development | yuxi.sun@ontariotechu.net       |
+| Evan Tome      | 100912667 | Q2, Q4           | evan.tome@ontariotechu.net      |
 
 ## Q1
-Swing is a Java library used to build desktop graphical user interfaces that run smoothly on an operating system. At its core, Swing provides a comprehensive suite of UI controls, buttons, text boxes, tables, menus, panels among many other things that developers can assemble into interactive windows. Since all of its components are written entirely in Java, programs made with Swing look and function the same no matter where they run. What makes Swing especially appealing is how customizable developers can easily adjust the layout, colors, and behavior of components to match the style of their application. Overall, developers often choose Swing when they want a reliable, flexible way to design desktop applications that work consistently and look great across different platforms.
+Swing is a Java library used to build desktop graphical user interfaces that run smoothly on an operating system. 
+At its core, Swing provides a comprehensive suite of UI controls, buttons, text boxes, tables, menus, panels among 
+many other things that developers can assemble into interactive windows. Since all of its components are written 
+entirely in Java, programs made with Swing look and function the same no matter where they run. What makes Swing 
+especially appealing is how customizable developers can easily adjust the layout, colors, and behavior of components to 
+match the style of their application. Overall, developers often choose Swing when they want a reliable, flexible way to 
+design desktop applications that work consistently and look great across different platforms.
 
 ### Class Diagram of Swing
 <img width="676" height="812" alt="image" src="https://github.com/user-attachments/assets/1bd98f0a-0cd0-4326-90d8-6cabfaac67b3" />
@@ -23,6 +29,16 @@ between the user and the application by taking input from the view and updating 
 It differs from the conventional MVC pattern described in the lectures because the model does not notify the view or 
 controller when its data changes. Instead, the controller directly retrieves data from the model and updates the view. 
 In the traditional MVC pattern, the view observes the model and updates automatically when data changes.
+
+## Q3
+This project can be run by cloning our repository to your favorite Java IDE.
+
+The [main](SwingMVC/src/MySwingMVCApp.java) method is contained within MySwingMVCApp.java. You can run and test the 
+program from there. There is a [products_file](SwingMVC/products_file) which contains the data needed for the execution
+of [FileScanner](SwingMVC/src/FileScanner.java).
+
+This project was built on top of the given starter code. Previous functionality is maintained but is isolated from the
+deliverables of the assignment.
 
 ## Q4
 
