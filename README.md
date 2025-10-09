@@ -43,5 +43,6 @@ deliverables of the assignment.
 ## Q4
 
 ### Sequence Diagram
-<img width="1160" height="715" alt="image" src="https://github.com/user-attachments/assets/7a6b1632-05b8-4b66-ae19-97a27ce88cbc" />
+<img width="1286" height="731" alt="image" src="https://github.com/user-attachments/assets/5bcb2184-d709-4d0a-b90e-d8e4b1af9cf3" />
+
 
